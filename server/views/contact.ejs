@@ -1,0 +1,85 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<!DOCTYPE html>
+<html>
+<!-- CONTACT ME PAGE @MANAN PATEL -->
+<head>
+    <meta content="en-ca" http-equiv="Content-Language">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Contact me form</title>
+    <style type="text/css">
+        #allpage {
+            background-color:#CCCCCC;
+        }
+
+        form {
+            font-family: "Times New Roman", Times, serif;                        
+            background-color:#CCCCCC;
+            border-style: double;
+            border-color:#FF0000;
+            border-width: thin;
+            right: auto;
+            left: auto;
+            clip: rect(auto, auto, auto, auto);
+            margin: auto;
+            width: 980px;
+            text-align: left;
+            top: auto;
+            bottom: auto;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+        }
+   
+    </style>
+</head>
+
+<body style="color: black; background-color:#CCCCCC;">
+    <div id="allpage">
+       <form novalidate="novalidate">
+                <fieldset id="delivery">
+                    <legend><h1>Please Tell me Something About Yourself </h1></legend>
+                    <label for="nameinput">First Name:</label>
+                    <input type="text" id="fnameinput" name="name" required="required" style="width: 200px" size="30" placeholder="First Name " />
+                    <label for="nameinput">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LastName:</label>
+                    <input type="text" id="lnameinput" name="name" required="required" style="width: 150px" size="30" placeholder="Last Name" />
+                    <br><br>
+                    <br>
+                    <label for="addrinput">Address:</label>
+                    <input type="text" id="addrinput" name="address" required="required" style="width: 600px" size="50" placeholder="XXXXXXXX" />
+                    <br>
+                    <br><br>
+                    <label for="cityinput">City:</label>
+                    <input type="text" id="cityinput" name="city" required="required" style="width: 176px" size="20" placeholder="XXXXXXX" />
+                    <br><br>Your Hobbies:<input name="Text1" style="width: 337px; height: 46px" type="text" value="You must be best at what you do!!"><br><br><br>
+                    <div id="error-age"></div>
+                </fieldset>
+                <br>
+                <fieldset id="passwordbox">
+                    <br>
+                    <label for="sausage">Email Address:<input type="email" id="email" onkeyup="emailChick()" name="emails" style="width: 564px" placeholder="name@example.com" />
+
+
+
+                </fieldset>
+                <P id="bb">
+
+                <P id="bb">
+                    <input type="button" id="previewBtn" value="Submit" style="width: 20%; height: 41px" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="Reset1" type="reset" value="Restart" class="auto-style1" style="width: 19%; height: 41px">
+                </P>
+            </form>    </div>
+    <script src ="a4 - Copy.js"> </script>
+</body>
+
+</html>
+
+<%- include partials/bottom_nav.ejs %> 
+<%- include partials/footer.ejs %> 
